@@ -1,56 +1,31 @@
-# Welcome to your Expo app 👋
+# Refuerzo pedagógico — Contadores del Bar Salesiano
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Entrega de **William Ariel Ortiz Terán**, curso **3E2**, desarrollada con Expo, React Native y TypeScript.
 
-## Get started
+La aplicación contiene tres contadores independientes para sanduches, empanadas y jugos. Cada uno respeta sus límites, permite incrementar o disminuir su valor y puede reiniciarse.
 
-1. Install dependencies
+## Retos completados
 
-   ```bash
-   npm install
-   ```
+- Reto 01: dominio del contador con tipos, límites y estados de interfaz.
+- Reto 02: componente presentacional `ContadorDisplay` con props tipadas.
+- Reto 03: botón reutilizable con variantes, estado deshabilitado y respuesta táctil.
+- Reto 04: integración de los tres contadores mediante `useState`.
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Verificación
 
 ```bash
-npm run reset-project
+pnpm install
+pnpm run test:all
+pnpm run check
+pnpm run lint
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Resultado esperado: los cuatro retos aprobados y cero errores de TypeScript o ESLint.
 
-### Other setup steps
+## Ejecutar la aplicación
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```bash
+pnpm start
+```
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Después se puede escanear el código QR con Expo Go. Para conocer la estructura, las reglas de entrega y el guion solicitado, consulta [GUIA_MONTAJE.md](GUIA_MONTAJE.md) y [PLANTILLA_SCREENCAST.md](PLANTILLA_SCREENCAST.md).
